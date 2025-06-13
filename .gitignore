@@ -1,0 +1,17 @@
+# Ignore all node_modules folders recursively
+**/node_modules/
+
+# Ignore all build folders recursively
+**/.build/
+
+# Optional: OS-specific and editor-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: log files
+*.log
+npm-debug.log*
+
+# Optional: environment files
+.env
+.env.*

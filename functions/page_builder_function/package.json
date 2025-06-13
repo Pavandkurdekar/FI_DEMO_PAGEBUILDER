@@ -1,0 +1,15 @@
+{
+	"name": "page_builder_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "axisfinance.loan@axisfinance.in",
+	"dependencies": {
+		"body-parser": "^1.20.3",
+		"cors": "^2.8.5",
+		"express": "^4.21.2",
+		"express-fileupload": "^1.5.1",
+		"fs": "^0.0.1-security",
+		"path": "^0.12.7",
+		"zcatalyst-sdk-node": "^3.0.0-beta.5"
+	}
+}

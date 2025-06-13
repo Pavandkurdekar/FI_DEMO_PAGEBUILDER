@@ -1,0 +1,9 @@
+{
+	"name": "new_page_builder_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "support@fidigital.com.au",
+	"dependencies": {
+		"zcatalyst-sdk-node": "beta"
+	}
+}

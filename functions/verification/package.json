@@ -1,0 +1,14 @@
+{
+	"name": "verification",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "axisfinance.loan@axisfinance.in",
+	"dependencies": {
+		"axios": "^1.7.9",
+		"body": "^5.1.0",
+		"crypto-js": "^4.2.0",
+		"express": "^4.21.2",
+		"parser": "^0.1.4",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

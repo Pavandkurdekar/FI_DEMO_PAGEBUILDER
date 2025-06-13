@@ -1,0 +1,6 @@
+{
+    "name": "page-builder",
+    "version": "0.0.1",
+    "homepage": "/__catalyst/auth/login",
+    "login_redirect": "index.html"
+}

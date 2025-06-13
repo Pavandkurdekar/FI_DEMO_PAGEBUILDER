@@ -1,0 +1,9 @@
+{
+	"name": "authentication",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "axisfinance.loan@axisfinance.in",
+	"dependencies": {
+		"zcatalyst-sdk-node": "latest"
+	}
+}

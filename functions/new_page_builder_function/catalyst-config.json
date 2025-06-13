@@ -1,0 +1,11 @@
+{
+	"deployment": {
+		"name": "new_page_builder_function",
+		"stack": "node20",
+		"type": "advancedio",
+		"env_variables": {}
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}
