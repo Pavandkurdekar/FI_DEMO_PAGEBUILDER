@@ -2,7 +2,7 @@
   "name": "page-builder",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+
   "dependencies": {
     "@ant-design/plots": "^2.3.2",
     "@antv/g2": "^5.2.8",
