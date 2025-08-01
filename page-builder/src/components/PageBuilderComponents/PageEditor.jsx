@@ -24,8 +24,15 @@ import {
   DeleteOutlined,
   ExclamationCircleOutlined,
 } from "@ant-design/icons";
-import templates from "./Templates";
+
 import websiteLayouts from "./WebsiteLayouts";
+import blogTemplates from "./Templates/BlogTemplates";
+import festivalTemplates from "./Templates/FestivalTemplates";
+import futuristicTemplates from "./Templates/FuturisticTemplates";
+import campaignTemplates from "./Templates/CampaignTemplates";
+import salesTemplates from "./Templates/SalesTemplates";
+import portfolioTemplates from "./Templates/PortfolioTemplates";
+import templates from "./Templates/Templates";
 
 const { Option } = Select;
 const { Title, Text } = Typography;
@@ -388,7 +395,7 @@ const PageEditor = () => {
             category: block.category,
             attributes: block.attributes,
           },
-          { at: 2 }
+          { at: 9 }
         );
       });
 
@@ -447,20 +454,101 @@ const PageEditor = () => {
         }
       });
 
-
       // Add Templates to GrapesJS Block Manager
-      templates.forEach((template) => {
-        editor.BlockManager.add(
-          template.id,
-          {
-            label: template.label,
-            content: template.content,
-            category: template.category,
-            attributes: { class: "fa " + template.icon },
-          },
-          { at: 0 }
-        );
-      });
+    templates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        { at: 0 }
+
+        
+      );
+    });
+    portfolioTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+      { at: 2 }
+
+        
+      );
+    });
+    salesTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        { at: 3}
+      
+      );
+    });
+    campaignTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at :4}
+ 
+      );
+    });
+    futuristicTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at:5}
+      
+      );
+    });
+    festivalTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at: 6}
+ 
+      );
+    });
+    blogTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at:7}
+  
+      );
+    });
+
 
       //Form Layouts Start----------------------
 
@@ -551,7 +639,6 @@ const PageEditor = () => {
       // ---------------------------------------------------------------------------------------------------
       // layouts
 
-
       // Add layouts to BlockManager
       websiteLayouts.forEach((layout) => {
         editor.BlockManager.add(
@@ -564,7 +651,7 @@ const PageEditor = () => {
           <p style="margin-top: 6px;">${layout.label}</p>
         `,
           },
-          { at: 1 }
+      
         );
       });
 

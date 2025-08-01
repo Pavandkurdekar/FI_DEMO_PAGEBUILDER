@@ -21,9 +21,14 @@ import {
 } from "antd";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import templates from "./Templates";
+import templates from "./Templates/Templates";
+import blogTemplates from "./Templates/BlogTemplates";
+import campaignTemplates from "./Templates/CampaignTemplates";
 import websiteLayouts from "./WebsiteLayouts";
-
+import portfolioTemplates from "./Templates/PortfolioTemplates";
+import salesTemplates from "./Templates/SalesTemplates";
+import futuristicTemplates from "./Templates/FuturisticTemplates";
+import festivalTemplates from "./Templates/FestivalTemplates";
 
 const { Title, Text } = Typography;
 
@@ -269,7 +274,7 @@ const GrapesJSPageBuilder = () => {
           category: block.category,
           attributes: block.attributes,
         },
-        { at: 2 }
+        { at: 9 }
       );
     });
 
@@ -318,14 +323,96 @@ const GrapesJSPageBuilder = () => {
           attributes: { class: "fa " + template.icon },
         },
         { at: 0 }
+
+        
       );
     });
+ 
+    portfolioTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+      { at: 2 }
+
+        
+      );
+    });
+    salesTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        { at: 3}
+      
+      );
+    });
+    campaignTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at :4}
+ 
+      );
+    });
+    futuristicTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at:5}
+      
+      );
+    });
+    festivalTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at: 6}
+ 
+      );
+    });
+    blogTemplates.forEach((template) => {
+      editor.BlockManager.add(
+        template.id,
+        {
+          label: template.label,
+          content: template.content,
+          category: template.category,
+          attributes: { class: "fa " + template.icon },
+        },
+        {at:7}
+  
+      );
+    });
+
 
     // ---------------------------------------------------------------------------------------------------
 
     // ---------------------------------------------------------------------------------------------------
     // layouts
-
 
     // Add layouts to BlockManager
     websiteLayouts.forEach((layout) => {
@@ -339,13 +426,8 @@ const GrapesJSPageBuilder = () => {
           <p style="margin-top: 6px;">${layout.label}</p>
         `,
         },
-        { at: 1 }
       );
     });
-
-  
-
-  
 
     //Form Layouts Start----------------------
 
